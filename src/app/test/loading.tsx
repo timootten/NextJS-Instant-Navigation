@@ -1,10 +1,6 @@
 
-import { DataComponent } from "@/components/data-component";
 import Link from "next/link";
 import { ClearCacheButton } from '../../components/clear-cache';
-
-// force dynamic rendering
-export const dynamic = "force-dynamic";
 
 export default async function Test() {
   return (
@@ -13,7 +9,7 @@ export default async function Test() {
       <ClearCacheButton />
       <h1>Test Page</h1>
       <p>This is a test page to demonstrate functionality.</p>
-      <DataComponent />
+      <div>Loading...</div>
     </div>
   );
 }
